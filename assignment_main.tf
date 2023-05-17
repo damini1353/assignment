@@ -66,7 +66,7 @@ resource "google_compute_network" "default" {
        dest_range = "0.0.0.0/0"
        next_hop_ip = null
        next_hop_instance = null
-       next_hop_network = google_compute_subnetwork.subnet3.self_link
+       next_hop_network = google_compute_network.self_link
    }
 
 #Create 1 Internet gateway
